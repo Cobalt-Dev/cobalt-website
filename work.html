@@ -1,0 +1,85 @@
+---
+layout: default
+title: Our Work.
+subtitle: Where growth is stagnant, we will innovate. Where flexibility is required,
+         we will be agile. Where people must be impacted, we will be empathic. Where
+          practicality is required, we will apply experience and horse-sense.
+menu-class-work: active-menu
+
+projects:
+  - project_title: Fido Money Lending.
+    description: Do you remember the story of “The Wizard of Oz”? In this story we saw the characters of Dorothy, who had wanted to run away from home because she thought there was a better place somewhere. We also met the scarecrow who believed he had no brain, the lion who thought he had no courage, and the kindly tin man who assumed he had no heart.<br><br> Together the four of them set off to the Emerald City to find the wizard in hopes that he could bestow upon them these virtues and find a way for Dorothy to go back home.
+    image_1: assets/img/fido-screen-1.png
+    image_2: assets/img/fido-screen-2.png
+    image_3: assets/img/fido-screen-1.png
+  - project_title: Barclays CRM.
+    description: Do you remember the story of “The Wizard of Oz”? In this story we saw the characters of Dorothy, who had wanted to run away from home because she thought there was a better place somewhere. We also met the scarecrow who believed he had no brain, the lion who thought he had no courage, and the kindly tin man who assumed he had no heart.<br><br> Together the four of them set off to the Emerald City to find the wizard in hopes that he could bestow upon them these virtues and find a way for Dorothy to go back home.
+    image_1: assets/img/fido-screen-1.png
+    image_2: assets/img/fido-screen-2.png
+    image_3: assets/img/fido-screen-1.png
+  - project_title: Petra Email Application.
+    description: Do you remember the story of “The Wizard of Oz”? In this story we saw the characters of Dorothy, who had wanted to run away from home because she thought there was a better place somewhere. We also met the scarecrow who believed he had no brain, the lion who thought he had no courage, and the kindly tin man who assumed he had no heart.<br><br> Together the four of them set off to the Emerald City to find the wizard in hopes that he could bestow upon them these virtues and find a  way for Dorothy to go back home.
+    image_1: assets/img/fido-screen-1.png
+    image_2: assets/img/fido-screen-2.png
+    image_3: assets/img/fido-screen-1.png
+
+---
+
+<div class="pattern-space" style="margin-top:65px;">
+
+      <div class="inner-page row">
+        <!-- <div class="small-12 columns callout"> -->
+          <div class="large-10" style="margin-top:6.1%;">
+            <h1 style="/* Our Approach: */
+      font-family: Merriweather; font-weight: bold;
+      font-size: 64px;
+      color: #006BB2;">{{ page.title }}</h1>
+            <h5 style="/* Where growth is stag: */
+            font-family: Titillium Web; font-weight: light;
+
+      font-size: 24px;
+      color: #319AD5;
+      line-height: 43px;">{{ page.subtitle }}</h5>
+          </div>
+
+        </div>
+
+
+{% for item in page.projects %}
+        <div class="row">
+            <div class="large-10" style="margin-top:9.1%;">
+              <h3 style="/* What we do: */
+              font-family: Merriweather; font-weight: bold;
+      font-size: 48px;
+      color: #006BB2;">{{ item.project_title }}</h3>
+
+      <div class="single-item slider" style="background-color: #FFF; height:100%">
+
+              <img src="{{ item.image_1 }}" style="">
+              <img src="{{ item.image_2 }}" style="">
+
+              <img src="{{ item.image_3 }}" style="">
+
+          </div>
+      <p class="two-columns" style="/* There is no better a: */
+      font-family: Titillium Web;
+      font-weight: 300;
+      font-size: 20px;
+      color: #000000;
+      line-height: 30px;">
+
+      
+
+        {{ item.description }}
+       </p>
+
+            </div>
+
+      </div>
+
+{% endfor %}
+
+
+
+
+      </div>

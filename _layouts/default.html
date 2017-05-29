@@ -1,0 +1,47 @@
+
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cobalt Partners: {{ page.title }}</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,,400,700,900,|Titillium+Web:200,300,400,600,700,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css">
+
+  </head>
+  <body class="full-width" style="padding: 0px;">
+
+  {% include navigation.html %}
+
+  {{ content }}
+
+{% include footer.html %}
+
+<script src="assets/js/app.js"></script>
+
+
+<!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script> -->
+  <script src="assets/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(document).on('ready', function() {
+      $('.single-item').slick({
+        autoplay: false,
+        arrows: false,
+        dots: true,
+        zIndex: 0
+      });
+    });
+  </script>
+
+
+<script async src='https://pepper.swat.io/embed.js?eyJwb3NpdGlvbiI6InJpZ2h0IiwiY29sb3IiOiIwMDZiYjIiLCJjdXN0b21Db2xvciI6dHJ1ZSwiaWNvbiI6ImJ1YmJsZSIsInByb25vdW4iOiJ1cyIsImxhbmd1YWdlIjoiZW4iLCJicmFuZGVkIjpmYWxzZSwiaW50cm9UZXh0IjoiIiwiY2hhbm5lbHMiOltbImZhY2Vib29rIiwidGhlY29iYWx0cGFydG5lcnMiLCJzb2NpYWwiXSxbInR3aXR0ZXIiLCJjb2JhbHRwYXJ0bmVycyIsInNvY2lhbCJdLFsibGlua2VkaW4iLCJodHRwczovL3d3dy5saW5rZWRpbi5jb20vY29tcGFueS85MzUwNzk2P3Ryaz12c3JwX2NvbXBhbmllc19jbHVzdGVyX25hbWUmdHJrSW5mbz1WU1JQc2VhcmNoSWQlM0ExMzgxMjgxNjAxNDcwMjIxNTYyNjYwJTJDVlNSUHRhcmdldElkJTNBOTM1MDc5NiUyQ1ZTUlBjbXB0JTNBY29tcGFuaWVzX2NsdXN0ZXIiLCJzb2NpYWwiXSxbInBob25lIiwiKzIzMyAzMCAyNzMgNzIxMCIsImNsYXNzaWMiXSxbImVtYWlsIiwiaW5mb0B0aGVjb2JhbHRwYXJ0bmVycy5jb20iLCJjbGFzc2ljIl1dfQ=='></script>
+</body>
+</html>
